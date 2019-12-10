@@ -1,0 +1,254 @@
+@import 'common-variable';
+@import 'mixin-var';
+body {
+  font-family: MS PGothic;
+}
+.container {
+  @include container-maxin;
+}
+.clearFix:after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+.site-desc {
+  font-size: 10px;
+  margin-top: 16px;
+}
+.logo {
+  float: left;
+  margin-top: $mt-9px;
+}
+
+#header {
+		ul {
+			float: right;
+  		margin-top: $mt-10px;
+  		li {
+ 			 float: left;
+			}
+			li:nth-child(1) {
+ 			margin-top: $mt-17px;
+ 			}
+ 			li:nth-child(2) {
+ 			margin-top: $mt-17px;
+ 			margin-left: $ml-5px;
+ 			}
+ 			li:nth-child(3) {
+ 			margin-top: $mt-5px;
+ 			margin-left: $ml-5px;
+ 			}
+		}
+}
+
+#nav {
+	 clear: both;
+  height: 33px;
+  margin-top: $mt-10px;
+  background-image: url("../img/dot.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+
+  ul {
+  	li {
+  		float: left;
+		  width: 20%;
+		  height: 33px;
+
+		  a {
+		  display: block;
+		  color: #fff;
+		  font-family: Hiragino Kaku Gothic Pro W3;
+		  font-size: $fs-14px;
+		  text-align: center;
+			}
+  	}
+  	.nav-list01 {
+  		background: url("../img/nav_list01_off.png");
+		  a {
+			  padding-top: $pt-7px;
+			  font-family: Swis721 Md BT;
+			}
+		}
+		.nav-list02 {
+		  background: url("../img/nav_list02_off.png");
+		  a {
+			  padding-top: $pt-5px;
+			}
+		}
+		.nav-list03 {
+		  background: url("../img/nav_list03_off.png");
+		  a {
+			  padding-top: $pt-5px;
+			}
+		}
+		.nav-list04 {
+		  background: url("../img/nav_list04_off.png");
+		  a {
+			  padding-top: $pt-7px;
+			}
+		}
+		.nav-list05 {
+		  background: url("../img/nav_list05_off.png");
+		  a {
+			  padding-top: $pt-5px;
+			}
+		}
+		.nav-list01:hover {
+		  background: url("../img/nav_list01_on.png");
+		}
+		.nav-list02:hover {
+		  background: url("../img/nav_list02_on.png");
+		}
+		.nav-list03:hover {
+		  background: url("../img/nav_list03_on.png");
+		}
+		.nav-list04:hover {
+		  background: url("../img/nav_list04_on.png");
+		}
+		.nav-list05:hover {
+		  background: url("../img/nav_list05_on.png");
+		}
+  }
+}
+
+#main-visual {
+	display: flex;
+  justify-content: center;
+  margin-top: 11px;
+  height: 160px;
+  background-image: url("../img/mainvisual.png");
+  background-repeat: no-repeat;
+
+  ul {
+  padding-left: 200px;
+  align-self: center;
+
+  	li:first-child {
+		  padding-left: $pl-5px;
+		  color: $color-fff;
+		  font-family: Kozuka Gothic Pr6N R;
+		  font-size: 19px;
+		}
+		li:last-child {
+		  padding-left: 17px;
+		  font-family: Copperplate Gothic Light;
+		  font-size: 13px;
+		  color: $color-fff;
+		}
+	}
+}
+
+#content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: $mt-9px;
+	 .sec-ttl {
+	 			display: block;
+				height: 27px;
+				background-color: #ececec;
+				border-bottom: 1px solid #0351ab;
+
+					h3 {
+						padding-top: 8px;
+						padding-left: 9px;
+						color: #666;
+						font-size: 14px;
+						font-weight: bold;
+					}
+	 		}
+	 		.sec-content {
+				padding-top: $pt-5px;
+				padding-left: $pl-5px;
+				padding-right: 5px;
+				color: $color-666;
+				font-family: MS PGothic;
+				font-size: 12px;
+				line-height: 1.5;
+			}
+
+	#main {
+		width: 520px;
+		display: flex;
+		flex-direction: column;
+	 
+	 .section {
+}
+	 #section01 {
+	 		.sec-content {
+		  padding-bottom: 16px;
+		  font-size: 12px;
+		  color: $color-666;
+			}
+			}
+	 #section02 {
+  		margin-top: 3px;
+
+  		.sec-content {
+  			ul {
+  				li {
+  					line-height: 23px;
+  					a {
+							  width: 80%;
+							  padding-left: 10px;
+							  color: #00f;
+							  text-decoration: underline;
+						}
+						span {
+							  width: 20%;
+							}
+  				}
+  				li:first-child {
+  					a:after {
+						  content: " ";
+						  display: inline-block;
+						  width: 28px;
+						  height: 11px;
+						  margin-left: $ml-5px;
+						  background: url("../img/newicon.png") no-repeat;
+						}
+  				}
+  			}
+  		}
+		}
+	 }
+ 
+
+ #aside {
+ 		width: 230px;
+ 		#section03 {
+ 			.sec-content {
+ 				.boldtext {
+				  font-weight: bold;
+				}
+ 			}
+ 		}
+ 		#section04 {
+		  margin-top: 24px;
+
+		  .banner02 {
+			  margin-top: 8px;
+			}
+		}
+ }
+} 
+
+#footer {
+  margin-top: 19px;
+  height: 46px;
+  background-image: linear-gradient(#275bcb, #4e8cf3);
+
+  p {
+	  display: block;
+	  padding-top: 16px;
+	  padding-left: 1px;
+	  color: $color-fff;
+	  font-family: arial;
+	  font-size: 11px;
+	  text-align: center;
+	}
+}
